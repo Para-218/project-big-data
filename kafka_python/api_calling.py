@@ -1,7 +1,12 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv
 
 # default city_name = 'Ha Noi', city_id = 1581130
+# Get api key from .env
+load_dotenv()
+API_KEY = os.getenv('API_KEY')
 
 # Call api openweather with input is either city id or city name and return json
 def openweathermap(city = 1581130):
