@@ -7,10 +7,11 @@ from data_generator import generate_message
 from kafka import KafkaProducer
 
 TOPIC_NAME = 'messages'
+BOOTSTRAP_SERVERS = 'localhost:9092'
 
 # Kafka Producer
 producer = KafkaProducer(
-    bootstrap_servers=['localhost:9092'],
+    bootstrap_servers=[BOOTSTRAP_SERVERS],
     key_serializer=lambda key: key.encode('utf-8'),
     value_serializer=lambda message: message.encode('utf-8')
 )

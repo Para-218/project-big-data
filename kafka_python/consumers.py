@@ -2,12 +2,13 @@ import json
 from kafka import KafkaConsumer
 
 TOPIC_NAME = 'messages'
+BOOTSTRAP_SERVERS = 'localhost:9092'
 
 if __name__ == '__main__':
     # Kafka Consumer 
     consumer = KafkaConsumer(
         TOPIC_NAME,
-        bootstrap_servers='localhost:9092',
+        bootstrap_servers=BOOTSTRAP_SERVERS,
         auto_offset_reset='earliest'
     )
     for message in consumer:

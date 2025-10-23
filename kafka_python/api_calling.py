@@ -1,9 +1,7 @@
 import requests
 import json
 
-API_KEY ='3abbca0e1f9d50771d33fa9e8008c9bc'
-city_name = 'Ha Noi'
-city_id = 1581130
+# default city_name = 'Ha Noi', city_id = 1581130
 
 # Call api openweather with input is either city id or city name and return json
 def openweathermap(city = 1581130):
