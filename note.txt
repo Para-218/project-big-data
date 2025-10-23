@@ -1,0 +1,54 @@
+22/09/2025
+dataset: https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region
+api: https://openweathermap.org/api
+youtube: https://www.youtube.com/watch?v=MdIfZJ08g2I
+AWS+Docker: https://www.youtube.com/@sparkfaqs/videos
+ + awc, hive, spark
+
+* có 14 cột giá trị tương quan
+- coord:
+ + lon			OOO
+ + lan			OOO
+- weather
+ + id
+ + main
+ + description
+ + icon
+- base
+- main
+ + temp			OOO
+ + temp_feel_like
+ + pressure		OOO
+ + humid		OOO
+ + temp_min		OOO
+ + temp_max		OOO
+ + sea_pressure
+ + ground_pressure	OOO
+- visibility
+- wind
+ + speed		OOO
+ + direction_degree	OOO
+ + gust			OOO
+- clouds
+ + cloudiness
+- rain
+ + 1h			OOO
+- snow
+ + 1h
+- date_time		OOO
+- name
+- id
+ + country		OOO
+
+29/09/2025
+api: https://docs.stormglass.io/#/bio
+
+21/10/2025
+2181 ---> Zookeeper
+3030 ---> Kafka UI Lenses
+8081 ---> Schema Registry
+8082 ---> REST Proxy
+9092 ---> Kafka Broker
+
+https://viblo.asia/p/kafka-docker-python-LzD5dodzljY
+https://www.youtube.com/watch?v=Okudud_em3M

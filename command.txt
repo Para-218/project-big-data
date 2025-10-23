@@ -1,0 +1,6 @@
+docker compose up -d
+docker exec -it broker1 /bin/bash
+
+kafka-topics --bootstrap-server localhost:9092 --topic messages --partitions 2 --replication-factor 2 --create --config retention.ms=60000 --config retention.bytes=52428800
+kafka-topics --describe --topic messages --bootstrap-server localhost:9092
+
