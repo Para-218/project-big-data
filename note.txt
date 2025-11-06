@@ -52,3 +52,4 @@ api: https://docs.stormglass.io/#/bio
 
 https://viblo.asia/p/kafka-docker-python-LzD5dodzljY
 https://www.youtube.com/watch?v=Okudud_em3M
+https://www.youtube.com/watch?v=O3LCsq1g0GU

@@ -1,1 +1,4 @@
 kafka_python/.env
+s3_admin_accessKeys.csv
+note.txt
+scraft-docker.yml
