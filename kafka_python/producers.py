@@ -31,12 +31,12 @@ if __name__ == '__main__':
         producer.send(topic = TOPIC_NAME, key=str(key_id), value = openweather_data)
         
         # Sleep for a number of seconds
-        time.sleep(10)
+        time.sleep(140)
         key_id += 1
         
         # Send it to our 'messages' topic
-        print(f'Producing message @ {datetime.now()} | Key = {key_id} | Message = {str(dummy_message)}')
-        producer.send(topic = TOPIC_NAME, key=str(key_id), value = dummy_message)
+        # print(f'Producing message @ {datetime.now()} | Key = {key_id} | Message = {str(dummy_message)}')
+        # producer.send(topic = TOPIC_NAME, key=str(key_id), value = dummy_message)
         
         # Sleep for a number of seconds
         time.sleep(10)
